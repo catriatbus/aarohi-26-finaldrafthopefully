@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AAROHI '26 — The Grand Show | VNIT Nagpur</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;family=Hanken+Grotesk:wght@500&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+    <title>AAROHI '26 â€” The Grand Show | VNIT Nagpur</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Hanken+Grotesk:wght@500;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -78,66 +83,24 @@
                         "outline-thin": "2px"
                     },
                     "fontFamily": {
-                        "headline-lg": [
-                            "Bricolage Grotesque"
-                        ],
-                        "label-bold": [
-                            "Space Grotesk"
-                        ],
-                        "headline-lg-mobile": [
-                            "Bricolage Grotesque"
-                        ],
-                        "body-md": [
-                            "Hanken Grotesk"
-                        ],
-                        "display-xl": [
-                            "Bricolage Grotesque"
-                        ]
+                        "headline-lg": ["Bricolage Grotesque", "sans-serif"],
+                        "label-bold": ["Space Grotesk", "sans-serif"],
+                        "headline-lg-mobile": ["Bricolage Grotesque", "sans-serif"],
+                        "body-md": ["Hanken Grotesk", "sans-serif"],
+                        "display-xl": ["Bricolage Grotesque", "sans-serif"]
                     },
                     "fontSize": {
-                        "headline-lg": [
-                            "48px",
-                            {
-                                "lineHeight": "56px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "800"
-                            }
-                        ],
-                        "label-bold": [
-                            "14px",
-                            {
-                                "lineHeight": "16px",
-                                "fontWeight": "700"
-                            }
-                        ],
-                        "headline-lg-mobile": [
-                            "36px",
-                            {
-                                "lineHeight": "40px",
-                                "fontWeight": "800"
-                            }
-                        ],
-                        "body-md": [
-                            "18px",
-                            {
-                                "lineHeight": "28px",
-                                "fontWeight": "500"
-                            }
-                        ],
-                        "display-xl": [
-                            "80px",
-                            {
-                                "lineHeight": "88px",
-                                "letterSpacing": "-0.04em",
-                                "fontWeight": "800"
-                            }
-                        ]
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "16px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["36px", { "lineHeight": "40px", "fontWeight": "800" }],
+                        "body-md": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "display-xl": ["80px", { "lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "800" }]
                     }
-                },
+                }
             }
         }
     </script>
-<style>
+    <style>
         /* Comic book halftone pattern */
         .bg-halftone {
             background-image: radial-gradient(circle, #000 1px, transparent 1.5px);
@@ -164,6 +127,9 @@
         .comic-shadow {
             box-shadow: 6px 6px 0px 0px #000;
         }
+        .comic-shadow-sm {
+            box-shadow: 3px 3px 0px 0px #000;
+        }
         .comic-shadow-lg {
             box-shadow: 8px 8px 0px 0px #000;
         }
@@ -177,142 +143,157 @@
             transform: translate(4px, 4px);
             box-shadow: 4px 4px 0px 0px #000;
         }
+
+
     </style>
 </head>
 <body class="bg-background text-on-background font-body-md overflow-x-hidden">
+
 <!-- Hero Section -->
 <header class="relative w-full min-h-[80vh] flex flex-col items-center justify-center overflow-hidden border-b-[5px] border-black pb-section-padding">
-<!-- Sun-drenched pastel hills background (simulated with CSS gradients) -->
-<div class="absolute inset-0 bg-gradient-to-b from-surface-bright to-surface-variant z-0">
-<div class="absolute bottom-0 w-full h-[50%] bg-tertiary-fixed-dim rounded-t-[100%] scale-150 translate-y-1/2 border-[5px] border-black opacity-80"></div>
-<div class="absolute bottom-0 w-full h-[30%] bg-primary-fixed-dim rounded-t-[100%] scale-125 translate-y-1/2 border-[5px] border-black opacity-90"></div>
-</div>
-<!-- Halftone Overlay -->
-<div class="absolute inset-0 bg-halftone z-10"></div>
-<div class="relative z-20 flex flex-col items-center text-center mt-12 gap-8 px-gutter">
-<img alt="Aarohi 25 Logo" class="aarohi-logo w-full max-w-4xl border-[4px] border-transparent drop-shadow-[8px_8px_0_rgba(0,0,0,1)]" src="assets/aarohi25-logo.png"/>
-<div class="bg-surface border-[4px] border-black px-8 py-4 comic-shadow-lg transform -rotate-2">
-<h1 class="text-display-xl font-display-xl uppercase text-secondary">
-                    Welcome to the Strip
-                </h1>
-</div>
-<p class="max-w-2xl text-body-md font-body-md bg-white border-[3px] border-black p-4 comic-shadow mt-4">
-                Get ready for the most electric, sun-drenched, high-energy festival of the year. Grab your crew and hit the strip.
-            </p>
-</div>
+    <!-- Sun-drenched pastel hills background -->
+    <div class="absolute inset-0 bg-gradient-to-b from-surface-bright to-surface-variant z-0">
+        <div class="absolute bottom-0 w-full h-[50%] bg-tertiary-fixed-dim rounded-t-[100%] scale-150 translate-y-1/2 border-[5px] border-black opacity-80"></div>
+        <div class="absolute bottom-0 w-full h-[30%] bg-primary-fixed-dim rounded-t-[100%] scale-125 translate-y-1/2 border-[5px] border-black opacity-90"></div>
+    </div>
+    <!-- Halftone Overlay -->
+    <div class="absolute inset-0 bg-halftone z-10"></div>
+    <div class="relative z-20 flex flex-col items-center text-center mt-12 gap-8 px-gutter">
+        <img alt="Aarohi 25 Logo" class="aarohi-logo w-full max-w-4xl border-[4px] border-transparent drop-shadow-[8px_8px_0_rgba(0,0,0,1)]" src="assets/aarohi25-logo.png"/>
+        <div class="bg-surface border-[4px] border-black px-8 py-4 comic-shadow-lg transform -rotate-2">
+            <h1 class="text-display-xl font-display-xl uppercase text-secondary">
+                Welcome to the Strip
+            </h1>
+        </div>
+        <p class="max-w-2xl text-body-md font-body-md bg-white border-[3px] border-black p-4 comic-shadow mt-4">
+            Get ready for the most electric, sun-drenched, high-energy festival of the year. Grab your crew, track crowd flow, and hit the strip.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="events.html" class="bg-secondary text-on-secondary border-[3px] border-black px-6 py-3 font-label-bold text-label-bold uppercase comic-shadow comic-btn transition-transform">
+                âš¡ Explore Events
+            </a>
+        </div>
+    </div>
 </header>
+
 <!-- Countdown Section -->
 <section class="w-full py-section-padding px-gutter bg-surface-container flex flex-col items-center border-b-[5px] border-black relative overflow-hidden">
-<div class="absolute inset-0 bg-halftone"></div>
-<div class="relative z-10 flex flex-col items-center gap-6 w-full max-w-4xl">
-<h2 class="text-headline-lg font-headline-lg uppercase border-b-[4px] border-black pb-2 mb-8">System Booting...</h2>
-<div class="flex gap-4 md:gap-8 justify-center w-full">
-<!-- Days -->
-<div class="bg-primary text-on-primary border-[4px] border-black w-24 h-24 md:w-32 md:h-32 flex flex-col justify-center items-center comic-shadow-lg transform rotate-1">
-<span class="text-headline-lg font-headline-lg italic">42</span>
-<span class="text-label-bold font-label-bold uppercase">Days</span>
-</div>
-<!-- Hours -->
-<div class="bg-secondary text-on-secondary border-[4px] border-black w-24 h-24 md:w-32 md:h-32 flex flex-col justify-center items-center comic-shadow-lg transform -rotate-1">
-<span class="text-headline-lg font-headline-lg italic">14</span>
-<span class="text-label-bold font-label-bold uppercase">Hours</span>
-</div>
-<!-- Minutes -->
-<div class="bg-tertiary text-on-tertiary border-[4px] border-black w-24 h-24 md:w-32 md:h-32 flex flex-col justify-center items-center comic-shadow-lg transform rotate-2">
-<span class="text-headline-lg font-headline-lg italic">59</span>
-<span class="text-label-bold font-label-bold uppercase">Mins</span>
-</div>
-</div>
-</div>
+    <div class="absolute inset-0 bg-halftone"></div>
+    <div class="relative z-10 flex flex-col items-center gap-6 w-full max-w-4xl">
+        <h2 class="text-headline-lg font-headline-lg uppercase border-b-[4px] border-black pb-2 mb-8">System Booting...</h2>
+        <div class="flex gap-4 md:gap-8 justify-center w-full">
+            <!-- Days -->
+            <div class="bg-primary text-on-primary border-[4px] border-black w-24 h-24 md:w-32 md:h-32 flex flex-col justify-center items-center comic-shadow-lg transform rotate-1">
+                <span class="text-headline-lg font-headline-lg italic">42</span>
+                <span class="text-label-bold font-label-bold uppercase">Days</span>
+            </div>
+            <!-- Hours -->
+            <div class="bg-secondary text-on-secondary border-[4px] border-black w-24 h-24 md:w-32 md:h-32 flex flex-col justify-center items-center comic-shadow-lg transform -rotate-1">
+                <span class="text-headline-lg font-headline-lg italic">14</span>
+                <span class="text-label-bold font-label-bold uppercase">Hours</span>
+            </div>
+            <!-- Minutes -->
+            <div class="bg-tertiary text-on-tertiary border-[4px] border-black w-24 h-24 md:w-32 md:h-32 flex flex-col justify-center items-center comic-shadow-lg transform rotate-2">
+                <span class="text-headline-lg font-headline-lg italic">59</span>
+                <span class="text-label-bold font-label-bold uppercase">Mins</span>
+            </div>
+        </div>
+    </div>
 </section>
+
 <!-- Navigation Menu Section -->
 <section class="w-full py-section-padding px-gutter bg-inverse-on-surface relative">
-<div class="max-w-7xl mx-auto">
-<div class="flex justify-between items-end mb-12 border-b-[5px] border-black pb-4">
-<h2 class="text-display-xl font-display-xl uppercase text-primary transform -rotate-1">Navigate</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Events Card -->
-<a href="events.html" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
-<div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
-<div class="relative z-10 h-full flex flex-col">
-<div class="flex justify-between items-start mb-4">
-<span class="bg-primary-fixed text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Main</span>
-<span class="material-symbols-outlined text-4xl">event</span>
-</div>
-<div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuBu2SQGZsA9rnppi3DuWYSXo1fYrXjaffFlMtcLavgUNYg-2RatI2JP5JlOloCdWD4Kz3i2ftO2yajVD6OI1kDf1tKnpheD7_dGH6hH2E9BrOKMTLrSlGnxePWGDiR34KCQoSl_3Y1Nvx-Y7qhRn8xIHHb-UtWjHTMr1ezsx4QRYN1_eD9bLYiNbb_Q2Q7lqjc_sq4TTSdzAhIi3w6W7N71OIVOTQSBbfxPXX__daOloSdnCHDEXP')"></div>
-<h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-primary transition-colors">Events</h3>
-<p class="text-body-md font-body-md mb-6 flex-grow">Discover all the exciting events happening at AAROHI '26.</p>
-<div class="w-full bg-primary text-on-primary border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center transform -skew-x-6">
-                            EXPLORE EVENTS
-                        </div>
-<div class="absolute -bottom-4 right-8 w-8 h-8 bg-surface border-r-[4px] border-b-[4px] border-black transform rotate-45 z-0"></div>
-</div>
-</a>
-<!-- Schedule Card -->
-<a href="details.html#schedule" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
-<div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
-<div class="relative z-10 h-full flex flex-col">
-<div class="flex justify-between items-start mb-4">
-<span class="bg-secondary-fixed text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Time</span>
-<span class="material-symbols-outlined text-4xl">schedule</span>
-</div>
-<div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHPPn0Z4VPQhFQLXh-7VPMbVQY1LiVwK5V9dn-HxUGF5s-7MjW-6RIajQfU2m7V9_vJ8c3nWYdXXRN_jI82cZ8n9Pb3I0iASMVWBKj5F7eFw9fKvjUWTKYVMB6d_pjV9K9r8ow5Z4QXM32E3q8NxW-4A8=-no')"></div>
-<h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-secondary transition-colors">Schedule</h3>
-<p class="text-body-md font-body-md mb-6 flex-grow">Check out the full schedule and plan your festival experience.</p>
-<div class="w-full bg-secondary text-on-secondary border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center transform skew-x-6">
-                            VIEW SCHEDULE
-                        </div>
-</div>
-</a>
-<!-- Artists Card -->
-<a href="details.html#artists" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
-<div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
-<div class="relative z-10 h-full flex flex-col">
-<div class="flex justify-between items-start mb-4">
-<span class="bg-tertiary-fixed text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Talent</span>
-<span class="material-symbols-outlined text-4xl">mic</span>
-</div>
-<div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZxRR8sVOmC8N-PxxqWE0Q-vSZ9TkXHQsYYq-O5W1rY5P1W5V3QBgc0F7Y5QX-dGOPaA5eN2c8QqvYxKdSG1OFD4Ov3yKyLB_4ykGMhF-A8eFTu0Z8Ug98e0r5V5TwR8e6j7aN3Ay0-FD5Y0MkEH_Fg=-no')"></div>
-<h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-tertiary transition-colors">Artists</h3>
-<p class="text-body-md font-body-md mb-6 flex-grow">Meet the incredible artists and performers at the festival.</p>
-<div class="w-full bg-tertiary-fixed-dim text-on-surface border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center">
-                            MEET ARTISTS
-                        </div>
-</div>
-</a>
-<!-- Sponsors Card -->
-<a href="details.html#sponsors" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
-<div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
-<div class="relative z-10 h-full flex flex-col">
-<div class="flex justify-between items-start mb-4">
-<span class="bg-primary-fixed-dim text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Partner</span>
-<span class="material-symbols-outlined text-4xl">handshake</span>
-</div>
-<div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtLo2Ry0kBqIRWQy2STc9FrE0VvT9pRXe-lE5X8RQrHDPU-bxAiMnLXLqRKa4_gXUVBmSZ9eSrB7M4G7BqH6zQI1V8HW4HO1zDwQJh6KrEJREb2-UVpkV-fKpZKSpGVXKi0AzUg9w6ZsNcaEVgxyUxEEKsE=-no')"></div>
-<h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-primary transition-colors">Sponsors</h3>
-<p class="text-body-md font-body-md mb-6 flex-grow">Thanks to our amazing sponsors making AAROHI '26 possible.</p>
-<div class="w-full bg-primary text-on-primary border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center transform -skew-x-6">
-                            OUR PARTNERS
-                        </div>
-</div>
-</a>
-</div>
-</div>
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-12 border-b-[5px] border-black pb-4">
+            <h2 class="text-display-xl font-display-xl uppercase text-primary transform -rotate-1">Navigate</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Events Card -->
+            <a href="events.html" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
+                <div class="relative z-10 h-full flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-primary-fixed text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Main</span>
+                        <span class="material-symbols-outlined text-4xl">event</span>
+                    </div>
+                    <div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuBu2SQGZsA9rnppi3DuWYSXo1fYrXjaffFlMtcLavgUNYg-2RatI2JP5JlOloCdWD4Kz3i2ftO2yajVD6OI1kDf1tKnpheD7_dGH6hH2E9BrOKMTLrSlGnxePWGDiR34KCQoSl_3Y1Nvx-Y7qhRn8xIHHb-UtWjHTMr1ezsx4QRYN1_eD9bLYiNbb_Q2Q7lqjc_sq4TTSdzAhIi3w6W7N71OIVOTQSBbfxPXX__daOloSdnCHDEXP'); background-size: cover; background-position: center;"></div>
+                    <h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-primary transition-colors">Events</h3>
+                    <p class="text-body-md font-body-md mb-6 flex-grow">Discover all the exciting events happening at AAROHI '26.</p>
+                    <div class="w-full bg-primary text-on-primary border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center transform -skew-x-6">
+                        EXPLORE EVENTS
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Crew Card -->
+            <a href="crew.html" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
+                <div class="relative z-10 h-full flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-secondary-fixed text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Team</span>
+                        <span class="material-symbols-outlined text-4xl">groups</span>
+                    </div>
+                    <div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAHPPn0Z4VPQhFQLXh-7VPMbVQY1LiVwK5V9dn-HxUGF5s-7MjW-6RIajQfU2m7V9_vJ8c3nWYdXXRN_jI82cZ8n9Pb3I0iASMVWBKj5F7eFw9fKvjUWTKYVMB6d_pjV9K9r8ow5Z4QXM32E3q8NxW-4A8=-no'); background-size: cover; background-position: center;"></div>
+                    <h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-secondary transition-colors">Crew</h3>
+                    <p class="text-body-md font-body-md mb-6 flex-grow">Join the AAROHI team and be part of the magic happening behind the scenes.</p>
+                    <div class="w-full bg-secondary text-on-secondary border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center transform skew-x-6">
+                        JOIN THE CREW
+                    </div>
+                </div>
+            </a>
+
+            <!-- Sponsors Card -->
+            <a href="sponsors.html" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
+                <div class="relative z-10 h-full flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-tertiary-fixed text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Partner</span>
+                        <span class="material-symbols-outlined text-4xl">handshake</span>
+                    </div>
+                    <div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZxRR8sVOmC8N-PxxqWE0Q-vSZ9TkXHQsYYq-O5W1rY5P1W5V3QBgc0F7Y5QX-dGOPaA5eN2c8QqvYxKdSG1OFD4Ov3yKyLB_4ykGMhF-A8eFTu0Z8Ug98e0r5V5TwR8e6j7aN3Ay0-FD5Y0MkEH_Fg=-no'); background-size: cover; background-position: center;"></div>
+                    <h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-tertiary transition-colors">Sponsors</h3>
+                    <p class="text-body-md font-body-md mb-6 flex-grow">Meet the brands and partners powering AAROHI '26.</p>
+                    <div class="w-full bg-tertiary-fixed-dim text-on-surface border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center">
+                        OUR PARTNERS
+                    </div>
+                </div>
+            </a>
+
+            <!-- Store Card -->
+            <a href="store.html" class="bg-surface border-[4px] border-black p-6 comic-shadow-lg relative overflow-hidden group hover:-translate-y-2 transition-transform duration-200 no-underline">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-halftone rounded-bl-full z-0"></div>
+                <div class="relative z-10 h-full flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-primary-fixed-dim text-on-surface border-[2px] border-black px-3 py-1 text-label-bold font-label-bold uppercase rounded-full">Shop</span>
+                        <span class="material-symbols-outlined text-4xl">shopping_bag</span>
+                    </div>
+                    <div class="h-48 mb-4 border-[3px] border-black bg-surface-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtLo2Ry0kBqIRWQy2STc9FrE0VvT9pRXe-lE5X8RQrHDPU-bxAiMnLXLqRKa4_gXUVBmSZ9eSrB7M4G7BqH6zQI1V8HW4HO1zDwQJh6KrEJREb2-UVpkV-fKpZKSpGVXKi0AzUg9w6ZsNcaEVgxyUxEEKsE=-no'); background-size: cover; background-position: center;"></div>
+                    <h3 class="text-headline-lg-mobile font-headline-lg-mobile uppercase mb-2 group-hover:text-primary transition-colors">Store</h3>
+                    <p class="text-body-md font-body-md mb-6 flex-grow">Shop exclusive AAROHI merch and festival gear.</p>
+                    <div class="w-full bg-primary text-on-primary border-[3px] border-black py-3 font-label-bold text-label-bold uppercase comic-shadow text-center transform -skew-x-6">
+                        SHOP NOW
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </section>
 
 <!-- Footer -->
 <footer class="w-full py-section-padding px-gutter flex flex-col items-center gap-base text-center bg-on-surface text-surface border-t-[5px] border-black">
-<div class="text-headline-lg font-headline-lg text-surface uppercase italic mb-4">
-            AAROHI '25
-        </div>
-<div class="flex gap-6 mb-6">
-<a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="events.html">Events</a>
-<a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="contact.html">Contact Us</a>
-<a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="details.html">Details</a>
-</div>
-<div class="text-body-md font-body-md text-surface-variant">
-            © 2025 AAROHI FESTIVAL. ALL RIGHTS RESERVED.
-        </div>
+    <div class="text-headline-lg font-headline-lg text-surface uppercase italic mb-4">
+        AAROHI '26
+    </div>
+    <div class="flex gap-6 mb-6">
+        <a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="events.html">Events</a>
+        <a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="crew.html">Crew</a>
+        <a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="sponsors.html">Sponsors</a>
+        <a class="text-surface-variant hover:text-tertiary-fixed underline transition-colors duration-200 text-label-bold font-label-bold" href="store.html">Store</a>
+    </div>
+    <div class="text-body-md font-body-md text-surface-variant">
+        Â© 2026 AAROHI FESTIVAL â€” VNIT NAGPUR. ALL RIGHTS RESERVED.
+    </div>
 </footer>
-</body></html>
+
+</body>
+</html>
